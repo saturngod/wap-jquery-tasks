@@ -63,6 +63,8 @@
 	<footer>You have 3 tasks</footer>
 </body>
 <script>
+	//when the jquery is ready
+	//it will add the function and event to the elements
 	$(document).ready(function () {
 		$('[required="required"]').prev('label').append('<span>*</span>').children('span').addClass('required');
 		$('tbody tr:even').addClass('even');
@@ -98,10 +100,10 @@
             $('form').fromObject(sampleTask);
             console.log(sampleTask);
         });
-		
+
 	});
 
-
+	//jquery plugin for form serialization
 	(function ($) {
 		$.fn.extend({
 
